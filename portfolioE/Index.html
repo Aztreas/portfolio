@@ -21,7 +21,9 @@
     <!--AOS CDN-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <script>
             $(document).ready(function(){
               // Add smooth scrolling to all links
@@ -48,6 +50,10 @@
               });
             });
             </script>
+
+    <script>
+        
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#nav" onload="myFunction()">
@@ -60,7 +66,7 @@
                 <div class="col-3 col-sm-2"></div>
                 <div class="col-6 col-sm-8 intro">
                     
-                        <h1> Hi, my name is Eric Li. </h1>
+                        <h1 class="animated fadeInDown slower"> Hi, my name is Eric Li. </h1>
             
                 </div>
                 <div class="col-3 col-sm-2"></div>
@@ -70,10 +76,9 @@
                     <div class="col-4 col-sm-3"></div>
     
                     <div class="col-4 col-sm-6 intro"> 
-                <p>
-                    I am a current student at UC Berkeley studing Computer and Data Science with interests in ML and VR.
-                    I love to learn anything and everything.
-                    Feel free to take a look at some of my work or say hello at ericli3088@berkeley.edu
+                <p class="animated fadeInDown slower">
+                    Please feel free to check out some of my work and learn a little about me
+                    , or say hello at ericli3088@berkeley.edu.
                     <br/> 
                 </p>
                     </div>
@@ -101,7 +106,7 @@
         -->
 
 
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center animated fadeInDown slower">
                 <li class="nav-item">
                   <a class="nav-link active waves-effect waves-light btn livid-color" href="#about">&nbspAbout&nbsp</a>
                 </li>
@@ -117,13 +122,101 @@
 
     <div class="container-fluid space-cadet-color" id="about">
         <div class="row">
-            <div class="col-6">1</div>
-            <div class="col-6">2</div>
+            <div class="col-8" id="experience">
+                <div class="experience">
+                    <h3>A Little Bit About Me</h3>
+                    <p>
+                        I am an undergraduate student at the University of California,
+                        Berkeley studying Computer and Data Science 
+                        with interests in full stack development, fintech, and machine learning.
+                        I love to learn anything and everything.
+
+                        </br>
+                        </br>
+
+                        This summer, I worked with Fidelity Investments as a 
+                        Software Engineering Intern, focusing on UI/UX testing 
+                        and app development. I have also built software for Wikipedia
+                        as a part of the Zimmerbot team, and conducted research
+                        on effective police responses as a part of the DecidingForce 
+                        team. Currently, I am
+                        an active equity research analyst for the Berkeley Investment Group
+                        , a consultant for DiversaTech Consulting, 
+                        and a lab assistant for the Data 8 course (Fundamentals of Data Science) 
+                        at UC Berkeley.
+
+                        </br>
+                        </br>
+
+                        Feel free to take a look at some of my work, or reach out at ericli3088@berkeley.edu
+                             
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-4" id="skills">
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <p>
+                        Languages: Python, Java, C#, HTML5, CSS3, 
+                        JavaScript, TypeScript, SQL, Scheme, MATLAB, GNU Octave 
+
+                        </br>
+                        </br>
+
+                        Software: Git, Jupyter Notebook, HP UFT, 
+                        Adobe Photoshop, Inkscape, Excel
+
+                        </br>
+                        </br>
+
+                        Frameworks & Libraries: Node.js, Express.js, 
+                        NumPy, scikit-learn, D3, ReactiveX, Angular, React 
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="container-fluid livid-color" id="projects">
-        
+
+        <div class="row justify-content-center title">
+            Projects
+        </div>
+
+        <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+        <div class="card-group">
+                <div class="card card-format">
+                    <img class="card-img-top" src=".\Images\zimmerbot.png" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Zimmerbot</h5>
+                    <p class="card-text">Some description</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card card-format">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card card-format">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+                <div class="col-1"></div>
+            </div>
+            
     </div>
 
     <div class="container-fluid space-cadet-color" id="contact">
