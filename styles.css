@@ -97,8 +97,8 @@ body, html, .container-fluid {
 }
 
 .highlight {
-  color: black;
-  background:#f5cb5c;
+  color: #f5cb5c;
+  font-weight: bold;
 }
 
 .card-text {
