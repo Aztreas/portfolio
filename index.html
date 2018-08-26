@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Eric's Portfolio</title>
+    <meta name="description" content="Eric's portfolio from scratch">
+    <meta name="author" content="Eric">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="icon" type="" href="">  favicon pending-->
+
+    <!-- Materialize CDNs -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- Bootstrap CDNs -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <!--AOS CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <script>
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+            
+                  // Store hash
+                  var hash = this.hash;
+            
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+               
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+            </script>
+</head>
+
+<body data-spy="scroll" data-target="#nav" onload="myFunction()">
+
+    <div class="container-fluid livid-color">
+            <div class="row mh1">
+                <div></div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-sm-2"></div>
+                <div class="col-6 col-sm-8 intro">
+                    
+                        <h1 class="animated fadeInDown slower"> Hi, my name is Eric Li. </h1>
+            
+                </div>
+                <div class="col-3 col-sm-2"></div>
+            </div>
+    
+            <div class="row">
+                    <div class="col-4 col-sm-3"></div>
+    
+                    <div class="col-4 col-sm-6 intro"> 
+                <p class="animated fadeInDown slower">
+                    Please feel free to check out some of my work and learn a little about me
+                    , or say hello at ericli3088@berkeley.edu.
+                    <br/> 
+                </p>
+                    </div>
+    
+                    <div class="col-4 col-sm-3"></div>
+                </div>
+    
+            <!--
+            add btn-float class for circular floating element
+            <i class="material-icons left"></i>
+            
+            <div class="row navbar" id="nav">
+                <div class="col-3"></div>
+                <div class="col-2 button">
+                    <a class="waves-effect waves-light btn livid-color" href="#about">About</a>
+                </div>
+                <div class="col-2 button">
+                    <a class="waves-effect waves-light btn livid-color" href="#projects">Projects</a>
+                </div>
+                <div class="col-2 button">
+                        <a class="waves-effect waves-light btn livid-color" href="#contact">Contact</a>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        -->
+
+
+        <ul class="nav justify-content-center animated fadeInDown slower">
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light btn livid-color" href="#about">&nbspAbout&nbsp</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light btn livid-color" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light btn livid-color" href="#contact">Contact</a>
+                </li>
+              </ul>
+
+    </div>
+
+    <section class="content-section livid-color" id="about">
+    <div class="container-fluid livid-color">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-7" id="experience">
+                <div class="experience">
+                    <h2 data-aos="fade-in" data-aos-duration="1250">A Little Bit About Me</h2>
+                    </br>
+                    <p data-aos="fade-in" data-aos-duration="1250">
+                        I am an undergraduate student at the <a class="highlight" href="https://www.berkeley.edu/">University of California,
+                        Berkeley</a> studying Computer and Data Science 
+                        with interests in full stack development, fintech, and machine learning.
+                        I love to learn anything and everything.
+
+                        </br>
+                        </br>
+
+                        This summer, I worked with <a class="highlight" href="https://www.fidelity.com/">
+                            Fidelity Investments</a> as a 
+                        Software Engineering Intern, focusing on UI/UX testing 
+                        and app development. I have also built software
+                        as a member of the Zimmerbot team for 
+                        <a class="highlight" href="https://www.wikipedia.org/">Wikipedia</a>
+                        , and conducted research
+                        on effective police responses as part of the 
+                        <a class="highlight" href="https://bids.berkeley.edu/research/deciding-force">DecidingForce</a> 
+                        project. Currently, I am
+                        an active equity research analyst for the 
+                        <a class="highlight" href="https://invest.berkeley.edu/">Berkeley Investment Group</a>, 
+                        a consultant for 
+                        <a class="highlight" href="http://diversatech.org/">DiversaTech Consulting</a>, 
+                        and a lab assistant for the 
+                        <a class="highlight" href="http://data8.org/">Data 8 course</a> 
+                        (Fundamentals of Data Science) 
+                        at UC Berkeley.
+
+                        </br>
+                        </br>
+
+                        Feel free to take a look at some of my work, or reach out at 
+                        <a class="highlight" href="mailto:ericli3088@berkeley.edu">ericli3088@berkeley.edu</a>
+                             
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-3" id="skills">
+                <div class="skills">
+                    <h2 data-aos="fade-in" data-aos-duration="1250">Skills</h2>
+                    </br>
+                    <p data-aos="fade-in" data-aos-duration="1250">
+                        <b class="highlight">Languages:</b> Python <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , Java <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , C# <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , HTML5 <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , CSS3 <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , JavaScript <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , TypeScript <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , SQL <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , Scheme <i class="fas fa-star"></i>
+                        , MATLAB <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , GNU Octave <i class="fas fa-star"></i>
+
+                        </br>
+                        </br>
+
+                        <b class="highlight">Software:</b> Git <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , Jupyter Notebook <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , HP UFT <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , Adobe Photoshop <i class="fas fa-star"></i>
+                        , Inkscape <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , Excel <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                        </br>
+                        </br>
+
+                        <b class="highlight">Frameworks & Libraries:</b> Node.js <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , Express.js <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , NumPy <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , scikit-learn <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , D3 <i class="fas fa-star"></i>
+                        , ReactiveX <i class="fas fa-star"></i>
+                        , Angular <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        , React  <i class="fas fa-star"></i>
+                        </br>
+                        </br>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        = very comfortable
+                        </br>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        = comfortable
+                        </br>
+                        <i class="fas fa-star"></i>
+                        = somewhat comfortable
+                    </p>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Portfolio -->
+    <section class="content-section livid-color" id="projects">
+            <div class="container">
+              <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0" data-aos="fade-in" data-aos-duration="1250">Portfolio</h3>
+                <h2 class="mb-5" data-aos="fade-in" data-aos-duration="1250">Recent Projects</h2>
+              </div>
+              <div class="card-deck" data-aos="fade-in" data-aos-duration="1250">
+                    <div class="card">
+                      <img class="card-img-top" src=".\Images\zimmerbot.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Zimmerbot</h5>
+                        <p class="card-text">
+                                Zimmerbot is a content curation web application and 
+                                Wikimedia Foundation NGO tool for organizing Wikipedia 
+                                articles efficiently as ZIM files for compact offline use.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                        <a href="https://github.com/DiversaTech/zimmerbot" class="waves-effect waves-light btn livid-color">Source</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src=".\Images\bic.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Berkeley Investment Conference</h5>
+                        <p class="card-text">
+                                Competition website for the Berkeley Investment Conference, 
+                                the University of California’s first undergraduate stock pitch competition, 
+                                to publicize event logistics, activity updates, and participant registration options.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                        <a href="https://github.com/Aztreas/bic" class="waves-effect waves-light btn livid-color">Source</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src=".\Images\gbx.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">The Greenbrier Companies</h5>
+                        <p class="card-text">
+                                collaborated with a team of seven to pitch The Greenbrier Companies to the 
+                                Berkeley Investment Group fund.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                        <a href="https://s3-us-west-1.amazonaws.com/berkeleyinvestmentgroupwebsite/Pitches/GBX.pdf" class="waves-effect waves-light btn livid-color">Source</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+      </section>
+
+      <section class="content-section livid-color" id="contact">
+      <div class="container livid-color">
+            <div class="row justify-content-center">
+                <a style="color: whitesmoke;" href="https://github.com/Aztreas" data-aos="fade-in" data-aos-duration="1250">
+                    <i class="fab fa-github" style="font-size:50px; padding-right: 20px;"></i></a>
+                <a style="color: whitesmoke;" href="https://www.linkedin.com/in/ericlipublic/" data-aos="fade-in" data-aos-duration="1250">
+                    <i class="fab fa-linkedin" style="font-size:50px; padding-right: 20px;"></i></a>
+                <a style="color: whitesmoke;" href="https://www.facebook.com/profile.php?id=100011620265661" data-aos="fade-in" data-aos-duration="1250">
+                    <i class="fab fa-facebook" style="font-size:50px; padding-right: 20px;"></i></a>
+        
+            </div>
+        </div>
+    </section>
+
+        
+  <script>
+    AOS.init(); 
+  </script>
+</body>
+
+</html>
