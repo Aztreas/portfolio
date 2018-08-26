@@ -20,6 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
     <!--AOS CDN-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="animate.min.css">
@@ -51,10 +52,6 @@
               });
             });
             </script>
-
-    <script>
-        
-    </script>
 </head>
 
 <body data-spy="scroll" data-target="#nav" onload="myFunction()">
@@ -109,7 +106,7 @@
 
         <ul class="nav justify-content-center animated fadeInDown slower">
                 <li class="nav-item">
-                  <a class="nav-link active waves-effect waves-light btn livid-color" href="#about">&nbspAbout&nbsp</a>
+                  <a class="nav-link waves-effect waves-light btn livid-color" href="#about">&nbspAbout&nbsp</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link waves-effect waves-light btn livid-color" href="#projects">Projects</a>
@@ -121,14 +118,15 @@
 
     </div>
 
-    <section class="content-section tan-color container-fluid" id="about">
-    <div class="container-fluid tan-color">
+    <section class="content-section livid-color" id="about">
+    <div class="container-fluid livid-color">
         <div class="row">
-            <div class="col-8" id="experience">
+            <div class="col-1"></div>
+            <div class="col-7" id="experience">
                 <div class="experience">
-                    <h2>A Little Bit About Me</h2>
+                    <h2 data-aos="fade-in" data-aos-duration="1250">A Little Bit About Me</h2>
                     </br>
-                    <p>
+                    <p data-aos="fade-in" data-aos-duration="1250">
                         I am an undergraduate student at the <a class="highlight" href="https://www.berkeley.edu/">University of California,
                         Berkeley</a> studying Computer and Data Science 
                         with interests in full stack development, fintech, and machine learning.
@@ -166,11 +164,11 @@
                 </div>
             </div>
 
-            <div class="col-4" id="skills">
+            <div class="col-3" id="skills">
                 <div class="skills">
-                    <h2>Skills</h2>
+                    <h2 data-aos="fade-in" data-aos-duration="1250">Skills</h2>
                     </br>
-                    <p>
+                    <p data-aos="fade-in" data-aos-duration="1250">
                         <b class="highlight">Languages:</b> Python <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         , Java <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         , C# <i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -217,6 +215,7 @@
                     </p>
                 </div>
             </div>
+            <div class="col-1"></div>
         </div>
     </div>
 </section>
@@ -225,62 +224,67 @@
     <section class="content-section livid-color" id="projects">
             <div class="container">
               <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">Portfolio</h3>
-                <h2 class="mb-5">Recent Projects</h2>
+                <h3 class="text-secondary mb-0" data-aos="fade-in" data-aos-duration="1250">Portfolio</h3>
+                <h2 class="mb-5" data-aos="fade-in" data-aos-duration="1250">Recent Projects</h2>
               </div>
-              <div class="row no-gutters">
-                <div class="col-lg-6">
-                  <a class="portfolio-item" href="#">
-                    <span class="caption">
-                      <span class="caption-content">
-                        <h2>Stationary</h2>
-                        <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                      </span>
-                    </span>
-                    <img class="img-fluid" src=".\Images\bic.png" alt="">
-                  </a>
-                </div>
-                <div class="col-lg-6">
-                  <a class="portfolio-item" href="#">
-                    <span class="caption">
-                      <span class="caption-content">
-                        <h2>Ice Cream</h2>
-                        <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                      </span>
-                    </span>
-                    <img class="img-fluid" src=".\Images\zimmerbot.png" alt="">
-                  </a>
-                </div>
-                <div class="col-lg-6">
-                  <a class="portfolio-item" href="#">
-                    <span class="caption">
-                      <span class="caption-content">
-                        <h2>Strawberries</h2>
-                        <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                      </span>
-                    </span>
-                    <img class="img-fluid" src=".\Images\bic.png" alt="">
-                  </a>
-                </div>
-                <div class="col-lg-6">
-                  <a class="portfolio-item" href="#">
-                    <span class="caption">
-                      <span class="caption-content">
-                        <h2>Workspace</h2>
-                        <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                      </span>
-                    </span>
-                    <img class="img-fluid" src=".\Images\zimmerbot.png" alt="">
-                  </a>
-                </div>
-              </div>
+              <div class="card-deck" data-aos="fade-in" data-aos-duration="1250">
+                    <div class="card">
+                      <img class="card-img-top" src=".\Images\zimmerbot.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Zimmerbot</h5>
+                        <p class="card-text">
+                                Zimmerbot is a content curation web application and 
+                                Wikimedia Foundation NGO tool for organizing Wikipedia 
+                                articles efficiently as ZIM files for compact offline use.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                        <a href="https://github.com/DiversaTech/zimmerbot" class="waves-effect waves-light btn livid-color">Source</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src=".\Images\bic.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Berkeley Investment Conference</h5>
+                        <p class="card-text">
+                                Competition website for the Berkeley Investment Conference, 
+                                the University of California’s first undergraduate stock pitch competition, 
+                                to publicize event logistics, activity updates, and participant registration options.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                        <a href="https://github.com/Aztreas/bic" class="waves-effect waves-light btn livid-color">Source</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src=".\Images\gbx.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">The Greenbrier Companies</h5>
+                        <p class="card-text">
+                                collaborated with a team of seven to pitch The Greenbrier Companies to the 
+                                Berkeley Investment Group fund.</p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                        <a href="https://s3-us-west-1.amazonaws.com/berkeleyinvestmentgroupwebsite/Pitches/GBX.pdf" class="waves-effect waves-light btn livid-color">Source</a>
+                      </div>
+                    </div>
+                  </div>
             </div>
       </section>
 
-      <div class="container-fluid space-cadet-color" id="contact">
+      <section class="content-section livid-color" id="contact">
+      <div class="container livid-color">
+            <div class="row justify-content-center">
+                <a style="color: whitesmoke;" href="https://github.com/Aztreas" data-aos="fade-in" data-aos-duration="1250">
+                    <i class="fab fa-github" style="font-size:50px; padding-right: 20px;"></i></a>
+                <a style="color: whitesmoke;" href="https://www.linkedin.com/in/ericlipublic/" data-aos="fade-in" data-aos-duration="1250">
+                    <i class="fab fa-linkedin" style="font-size:50px; padding-right: 20px;"></i></a>
+                <a style="color: whitesmoke;" href="https://www.facebook.com/profile.php?id=100011620265661" data-aos="fade-in" data-aos-duration="1250">
+                    <i class="fab fa-facebook" style="font-size:50px; padding-right: 20px;"></i></a>
         
+            </div>
         </div>
+    </section>
 
+        
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
